@@ -40,11 +40,12 @@ map <F2> :e %:r.pylint <bar> :read !pylint %:r.py
 " Automatically highlight lines over 80 characters.
 "    in Python files.
 " Find lines that are too long
-au FileType python let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
-au BufWinEnter *.py let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
+" au FileType python let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
+" au BufWinEnter *.py let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
 " Color lines that are too long them red.
-au FileType python let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
-au BufWinEnter *.py let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+" au FileType python let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+" au BufWinEnter *.py let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+au FileType python call matchadd('ColorColumn', '\%81v', 100)
 
 " Show line numbers
 au Filetype python setlocal number
