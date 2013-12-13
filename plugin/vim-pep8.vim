@@ -70,5 +70,7 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 set tabstop=4 
 set shiftwidth=4
 
-
+" Always show tabs, trailing spaces."
+set listchars=tab:>~,nbsp:_,trail:.
+set list
 
