@@ -45,6 +45,8 @@ map <F2> :e %:r.pylint <bar> :read !pylint %:r.py
 " Color lines that are too long them red.
 " au FileType python let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 " au BufWinEnter *.py let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+
+highlight ColorColumn ctermbg=magenta
 au FileType python call matchadd('ColorColumn', '\%81v', 100)
 
 " Show line numbers
