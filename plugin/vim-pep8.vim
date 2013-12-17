@@ -71,6 +71,6 @@ set tabstop=4
 set shiftwidth=4
 
 " Always show tabs, trailing spaces."
-set listchars=tab:>~,nbsp:_,trail:.
-set list
+au FileType python set listchars=tab:>~,nbsp:_,trail:.
+au FileType python set list
 
